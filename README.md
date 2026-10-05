@@ -241,6 +241,23 @@ jsnu-laundry-radar/
 
 ---
 
+## 📮 获取最新版与联系作者
+
+<p align="center">
+  <a href="https://github.com/xm2284/jsnu-laundry-radar/releases/latest"><img src="https://img.shields.io/badge/下载-最新版%20APK-1f9d8b?style=for-the-badge&logo=android&logoColor=white" alt="Download"/></a>
+  <a href="https://gitee.com/xm2284/jsnu-laundry-radar"><img src="https://img.shields.io/badge/Gitee-镜像-C71D23?style=for-the-badge&logo=gitee&logoColor=white" alt="Gitee"/></a>
+  <a href="https://xm2284.github.io/laundry-contact/"><img src="https://img.shields.io/badge/联系作者-联系页-0ea5a4?style=for-the-badge" alt="Contact"/></a>
+</p>
+
+- 📱 **下载安装**：见 [GitHub Releases](https://github.com/xm2284/jsnu-laundry-radar/releases/latest)（若暂无附件，可加作者 QQ 直接获取）；
+- 🌐 **联系作者 / 获取最新版**：[https://xm2284.github.io/laundry-contact/](https://xm2284.github.io/laundry-contact/)（独立联系页，`laundry-contact` 仓库）；
+- 💬 **作者 QQ**：`2284517861`（小明同学）—— 反馈问题、提需求、获取安装包；
+- 📖 **Gitee 镜像**：[https://gitee.com/xm2284/jsnu-laundry-radar](https://gitee.com/xm2284/jsnu-laundry-radar)。
+
+> App 内「设置 → 关于 → 获取最新版 / 联系作者」按钮会直接打开上面的联系页。
+
+---
+
 ## ⚠️ 免责声明
 
 1. 本项目为**第三方非官方**工具，与「海乐生活」/海尔及相关校方无任何隶属或合作关系；

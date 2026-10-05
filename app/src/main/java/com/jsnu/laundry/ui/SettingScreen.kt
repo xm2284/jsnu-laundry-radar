@@ -213,7 +213,7 @@ fun SettingScreen(viewModel: LaundryViewModel, onBack: () -> Unit) {
                 }
             }
             SectionCard("关于") {
-                Text("JSNU 洗衣雷达 v1.2.0", style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.SemiBold)
+                Text("JSNU 洗衣雷达 v${com.jsnu.laundry.BuildConfig.VERSION_NAME}", style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.SemiBold)
                 Text(
                     "只读海乐生活公开状态接口，不登录、不代下单、不代支付；洗衣机状态仅存本机。\n" +
                         "为统计使用情况，App 会生成一个随机匿名 ID 上报「启动/刷新/蹲守/追踪/洗完」等不含个人信息的事件到华为云数据库，不采集手机号、位置等任何个人身份信息，也无需注册。\n" +
@@ -231,10 +231,14 @@ fun SettingScreen(viewModel: LaundryViewModel, onBack: () -> Unit) {
                     }
                 }
                 Text(
-                    "如有问题或想加功能，点击 QQ 联系作者。",
+                    "获取最新版安装包、查看开源仓库或反馈问题：",
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
+                OutlinedButton(
+                    onClick = { openContactPage(appContext) },
+                    modifier = Modifier.fillMaxWidth(),
+                ) { Text("获取最新版 / 联系作者") }
             }
         }
     }
@@ -696,6 +700,18 @@ private fun AddPointButton(viewModel: LaundryViewModel) {
 
 private fun openQQ(context: Context) {
     com.jsnu.laundry.system.QqLauncher.launch(context)
+}
+
+/** 「获取最新版 / 联系作者」落地页（GitHub Pages），由 laundry-contact 仓库提供 */
+private const val CONTACT_URL = "https://xm2284.github.io/laundry-contact/"
+
+private fun openContactPage(context: Context) {
+    runCatching {
+        context.startActivity(
+            Intent(Intent.ACTION_VIEW, Uri.parse(CONTACT_URL))
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        )
+    }
 }
 
 /** 通知权限：跳到本应用通知设置页 */
