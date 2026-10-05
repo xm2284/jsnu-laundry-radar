@@ -19,24 +19,6 @@
     </linearGradient>
     <style>
       .hw { font-family: 'Comic Sans MS','Segoe Print','Bradley Hand','KaiTi','STKaiti',cursive; }
-      @keyframes hero-spin { to { transform: rotate(360deg); } }
-      .hero-drum { transform-origin: 205px 292px; animation: hero-spin 6s linear infinite; }
-      @keyframes hero-pulse { 0% { opacity:.85; transform: scale(.55); } 100% { opacity:0; transform: scale(1.7); } }
-      .hero-wave { transform-origin: 300px 196px; animation: hero-pulse 2.6s ease-out infinite; }
-      .hero-wave.w2 { animation-delay: .85s; }
-      .hero-wave.w3 { animation-delay: 1.7s; }
-      @keyframes hero-swing { 0%,100% { transform: rotate(-13deg); } 50% { transform: rotate(13deg); } }
-      .hero-bell { transform-origin: 902px 92px; animation: hero-swing 1.7s ease-in-out infinite; }
-      @keyframes hero-pop { 0% { transform: scale(1); } 8% { transform: scale(1.06); } 16%,100% { transform: scale(1); } }
-      .hero-notif { transform-origin: 710px 57px; animation: hero-pop 3.4s ease-in-out infinite; }
-      @keyframes hero-blink { 0%,100% { opacity:1; } 50% { opacity:.2; } }
-      .hero-dot { animation: hero-blink 1.5s ease-in-out infinite; }
-      @keyframes hero-rise { 0% { transform: translateY(0); opacity:0; } 30% { opacity:.8; } 100% { transform: translateY(-34px); opacity:0; } }
-      .hero-bub { animation: hero-rise 3.6s ease-in infinite; }
-      .hero-bub.b2 { animation-delay: 1.2s; }
-      .hero-bub.b3 { animation-delay: 2.4s; }
-      @keyframes hero-tilt { 0%,100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
-      .hero-tilt { transform-origin: 300px 240px; animation: hero-tilt 5s ease-in-out infinite; }
     </style>
   </defs>
 
