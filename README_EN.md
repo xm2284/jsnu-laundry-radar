@@ -1,4 +1,4 @@
-# 🧺 JSNU Laundry Radar
+# 🧺 JSNU Laundry Radar · Haile Life Edition
 
 [中文文档 (Chinese)](README.md) | English Documentation
 
@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/License-MIT-orange?style=flat-square" alt="License" />
 </p>
 
-An Android client that turns your dorm's shared laundry room into a **live availability radar**: real-time machine states, auto-stalking for a free washer, and washer-finish notifications.
+An Android client built on the **Haile Life (海乐生活)** campus laundry platform that turns your dorm's shared laundry room into a **live availability radar**: real-time machine states, auto-stalking for a free washer, and washer-finish notifications.
 
 ---
 

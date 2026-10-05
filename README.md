@@ -1,4 +1,4 @@
-# 🧺 JSNU 洗衣雷达 (JSNU Laundry Radar)
+# 🧺 JSNU 洗衣雷达 · 海乐生活版 (Haile Life Laundry Radar)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <b>面向高校宿舍的智慧洗衣房「空闲雷达」+ 蹲守通知 + 洗衣完成追踪 Android 客户端</b><br>
+  <b>基于「海乐生活」(Haile Life) 校园洗衣平台的洗衣机「空闲雷达」+ 蹲守通知 + 洗衣完成追踪 Android 客户端</b><br>
   实时感知洗衣机/洗鞋机/烘干机状态，自动蹲守空闲机器，洗完自动提醒取衣。
 </p>
 
@@ -22,6 +22,8 @@
 ---
 
 ## 💡 项目背景
+
+本项目针对的是 **「海乐生活」校园洗衣平台**（海尔旗下校园共享洗衣服务，`yshz-user.haier-ioc.com`）—— 该平台在江苏师范大学等高校宿舍洗衣房广泛部署，用户通过其小程序/App 扫码使用洗衣机、洗鞋机、烘干机。
 
 高校宿舍区的公共洗衣房普遍存在几类高频痛点：
 
