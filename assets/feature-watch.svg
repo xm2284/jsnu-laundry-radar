@@ -14,12 +14,12 @@
       <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.07 0"/>
     </filter>
     <style>
-      @keyframes fw-swing { 0%,100% { transform: rotate(-13deg); } 50% { transform: rotate(13deg); } }
-      .fw-bell { transform-origin: 176px 80px; animation: fw-swing 1.6s ease-in-out infinite; }
+      @keyframes fw-swing { 0%,100% { transform: rotate(-11deg); } 50% { transform: rotate(11deg); } }
+      .fw-bell { transform-origin: 210px 86px; animation: fw-swing 1.6s ease-in-out infinite; }
       @keyframes fw-pop { 0% { transform: scale(1); } 8% { transform: scale(1.05); } 16%,100% { transform: scale(1); } }
-      .fw-notif { transform-origin: 405px 116px; animation: fw-pop 3.2s ease-in-out infinite; }
+      .fw-notif { transform-origin: 423px 113px; animation: fw-pop 3.2s ease-in-out infinite; }
       @keyframes fw-sound { 0% { opacity:.85; transform: scale(.6); } 100% { opacity:0; transform: scale(1.45); } }
-      .fw-sound { transform-origin: 176px 150px; animation: fw-sound 1.6s ease-out infinite; }
+      .fw-sound { transform-origin: 210px 146px; animation: fw-sound 1.6s ease-out infinite; }
       @keyframes fw-hand { to { transform: rotate(360deg); } }
       .fw-hand { transform-origin: 452px 256px; animation: fw-hand 8s linear infinite; }
       .hw { font-family: 'Comic Sans MS','Segoe Print','Bradley Hand','KaiTi','STKaiti',cursive; }
@@ -37,21 +37,21 @@
 
   <!-- sound waves + bell -->
   <g fill="none" stroke="#E8745B" stroke-width="3">
-    <circle class="fw-sound" cx="176" cy="150" r="60"/>
+    <circle class="fw-sound" cx="210" cy="146" r="52"/>
   </g>
   <g class="fw-bell" filter="url(#fw-rough)">
-    <path d="M176 94 a 44 44 0 0 1 44 44 l 8 38 14 14 -132 0 14 -14 8 -38 a 44 44 0 0 1 44 -44z" fill="#F2C14E" stroke="#33302B" stroke-width="4"/>
-    <rect x="162" y="78" width="28" height="14" rx="7" fill="#F2C14E" stroke="#33302B" stroke-width="3.4"/>
-    <path d="M166 192 a 10 10 0 0 0 20 0z" fill="#E8745B" stroke="#33302B" stroke-width="3.4"/>
+    <path d="M210 100 a 36 36 0 0 1 36 36 l 7 32 12 12 -110 0 12 -12 7 -32 a 36 36 0 0 1 36 -36z" fill="#F2C14E" stroke="#33302B" stroke-width="4"/>
+    <rect x="198" y="86" width="24" height="12" rx="6" fill="#F2C14E" stroke="#33302B" stroke-width="3.2"/>
+    <path d="M200 180 a 10 10 0 0 0 20 0z" fill="#E8745B" stroke="#33302B" stroke-width="3.2"/>
   </g>
 
   <!-- notification bubble -->
   <g class="fw-notif" filter="url(#fw-rough2)">
-    <rect x="268" y="86" width="274" height="60" rx="13" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
-    <path d="M276 108 l -20 12 6 -22z" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
+    <rect x="300" y="84" width="246" height="58" rx="13" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
+    <path d="M310 106 l -18 10 5 -20z" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="288" y="114" font-size="19" fill="#E8745B">4 楼 A3 空出来啦！</text>
-      <text x="288" y="136" font-size="14" fill="#33302B">边沿触发 · 30 分钟冷却，不打扰</text>
+      <text x="318" y="112" font-size="18" fill="#E8745B">4 楼 A3 空出来啦！</text>
+      <text x="318" y="132" font-size="13" fill="#33302B">边沿触发 · 30 分钟冷却，不打扰</text>
     </g>
   </g>
 
@@ -74,22 +74,22 @@
 
   <!-- relaxed resident doodle (cute) -->
   <g filter="url(#fw-rough2)">
-    <ellipse cx="98" cy="314" rx="60" ry="18" fill="#DDEEF9" stroke="#33302B" stroke-width="3"/>
-    <path d="M66 304 q 0 -48 32 -48 q 32 0 32 48 z" fill="#E4F1DE" stroke="#33302B" stroke-width="3"/>
-    <circle cx="98" cy="238" r="21" fill="#FBE3D8" stroke="#33302B" stroke-width="3"/>
-    <path d="M78 234 q 4 -24 20 -24 q 16 0 20 24 q -9 -11 -20 -9 q -12 2 -20 9z" fill="#6B5B4B" stroke="#33302B" stroke-width="2.6"/>
-    <circle cx="91" cy="240" r="2.6" fill="#33302B"/>
-    <circle cx="106" cy="240" r="2.6" fill="#33302B"/>
-    <path d="M91 249 q 8 7 15 0" fill="none" stroke="#33302B" stroke-width="2.4" stroke-linecap="round"/>
-    <circle cx="82" cy="247" r="4" fill="#F6B7A8" opacity=".8"/>
-    <circle cx="115" cy="247" r="4" fill="#F6B7A8" opacity=".8"/>
+    <ellipse cx="100" cy="316" rx="58" ry="17" fill="#DDEEF9" stroke="#33302B" stroke-width="3"/>
+    <path d="M70 306 q 0 -46 30 -46 q 30 0 30 46 z" fill="#E4F1DE" stroke="#33302B" stroke-width="3"/>
+    <circle cx="100" cy="242" r="20" fill="#FBE3D8" stroke="#33302B" stroke-width="3"/>
+    <path d="M81 238 q 4 -23 19 -23 q 15 0 19 23 q -9 -11 -19 -9 q -11 2 -19 9z" fill="#6B5B4B" stroke="#33302B" stroke-width="2.6"/>
+    <circle cx="93" cy="244" r="2.6" fill="#33302B"/>
+    <circle cx="108" cy="244" r="2.6" fill="#33302B"/>
+    <path d="M93 253 q 7 7 14 0" fill="none" stroke="#33302B" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="85" cy="251" r="4" fill="#F6B7A8" opacity=".8"/>
+    <circle cx="117" cy="251" r="4" fill="#F6B7A8" opacity=".8"/>
     <!-- arms + phone -->
-    <path d="M72 276 q 12 12 22 12" fill="none" stroke="#33302B" stroke-width="3" stroke-linecap="round"/>
-    <path d="M124 276 q -12 12 -22 12" fill="none" stroke="#33302B" stroke-width="3" stroke-linecap="round"/>
-    <rect x="87" y="284" width="22" height="30" rx="4" fill="#FFFDF6" stroke="#33302B" stroke-width="2.6"/>
-    <path d="M92 292 h 12" stroke="#7FB2E5" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M76 280 q 12 12 22 12" fill="none" stroke="#33302B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M124 280 q -12 12 -22 12" fill="none" stroke="#33302B" stroke-width="3" stroke-linecap="round"/>
+    <rect x="89" y="288" width="22" height="30" rx="4" fill="#FFFDF6" stroke="#33302B" stroke-width="2.6"/>
+    <path d="M94 296 h 12" stroke="#7FB2E5" stroke-width="2.4" stroke-linecap="round"/>
   </g>
   <g class="hw" filter="url(#fw-rough2)">
-    <text x="22" y="220" font-size="16" fill="#33302B">在寝室等着就好</text>
+    <text x="24" y="200" font-size="16" fill="#33302B">在寝室等着就好</text>
   </g>
 </svg>

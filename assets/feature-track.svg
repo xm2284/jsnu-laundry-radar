@@ -15,7 +15,7 @@
     </filter>
     <style>
       @keyframes ft-spin { to { transform: rotate(360deg); } }
-      .ft-drum { transform-origin: 170px 190px; animation: ft-spin 5s linear infinite; }
+      .ft-drum { transform-origin: 171px 216px; animation: ft-spin 5s linear infinite; }
       @keyframes ft-dash { to { stroke-dashoffset: -220; } }
       .ft-ring { animation: ft-dash 6s linear infinite; }
       @keyframes ft-bub { 0% { transform: translateY(0); opacity:0; } 30% { opacity:.85; } 100% { transform: translateY(-30px); opacity:0; } }
