@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Create Gitee repo if missing
         shell: bash
@@ -33,4 +33,4 @@ jobs:
           URL="https://${USER}:${{ secrets.GITEE_TOKEN }}@gitee.com/${USER}/${REPO}.git"
           git remote remove origin 2>/dev/null || true
           git remote add gitee "$URL"
-          git push --force gitee HEAD:main
+          git push --mirror gitee
