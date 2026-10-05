@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 洗衣机简笔画：机身 + 圆形舱门 + 水泡 -->
+    <group>
+        <path
+            android:fillColor="#12A594"
+            android:pathData="M34,40 h40 a6,6 0 0 1 6,6 v24 a6,6 0 0 1 -6,6 h-40 a6,6 0 0 1 -6,-6 v-24 a6,6 0 0 1 6,-6 z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,48 a12,12 0 1 0 0,24 a12,12 0 1 0 0,-24 z" />
+        <path
+            android:fillColor="#12A594"
+            android:pathData="M54,52 a8,8 0 1 0 0,16 a8,8 0 1 0 0,-16 z" />
+        <path
+            android:fillColor="#12A594"
+            android:pathData="M46,34 m-1.5,0 a1.5,1.5 0 1 0 3,0 a1.5,1.5 0 1 0 -3,0" />
+        <path
+            android:fillColor="#12A594"
+            android:pathData="M52,30 m-1.5,0 a1.5,1.5 0 1 0 3,0 a1.5,1.5 0 1 0 -3,0" />
+        <path
+            android:fillColor="#12A594"
+            android:pathData="M58,33 m-1.5,0 a1.5,1.5 0 1 0 3,0 a1.5,1.5 0 1 0 -3,0" />
+    </group>
+</vector>

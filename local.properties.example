@@ -1,0 +1,10 @@
+# 本地开发私密配置模板 (local.properties)
+# 复制或重命名为 local.properties 填入真实值即可，该文件已被 .gitignore 忽略
+
+# Android SDK 路径 (Android Studio 会自动配置)
+# sdk.dir=C\:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+
+# 友盟分析与推送组件配置（可选，不配置则安全跳过）
+UMENG_APPKEY=
+UMENG_MESSAGE_SECRET=
+UMENG_CHANNEL=official

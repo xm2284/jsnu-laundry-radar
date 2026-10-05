@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JSNU洗衣雷达</string>
+    <string name="widget_label">洗衣雷达卡片</string>
+    <string name="widget_desc">一眼查看当前点位空闲/可约洗衣机数量与最快可用时间</string>
+    <string name="widget_tracking_label">洗衣中追踪</string>
+    <string name="widget_tracking_desc">实时显示正在使用的洗衣机倒计时与预计洗完时间，一键定闹钟/去海乐</string>
+</resources>

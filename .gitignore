@@ -1,0 +1,33 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Output artifacts
+/app/build/
+*.apk
+*.aab
+
+# Keystore / Certificate secrets
+*.jks
+*.keystore
+*.p12
+*.cer
+
+# Huawei AppGallery Connect sensitive credentials
+agconnect-services.json
+app/agconnect-services.json
+!agconnect-services.json.example
+!app/agconnect-services.json.example
+
+# OS files
+Thumbs.db

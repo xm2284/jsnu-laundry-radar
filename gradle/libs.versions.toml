@@ -1,0 +1,19 @@
+# 华为 agcp 插件 apply 时会通过 VersionCatalogsExtension.named("libs") 读取默认版本目录，
+# 若工程不存在该 catalog 会直接抛 "Catalog named libs doesn't exist"。
+# 因此保留这个非空的默认版本目录文件（Gradle 会据此自动创建 libs catalog）。
+# 工程依赖仍在 build.gradle.kts 中以坐标直接声明，下面条目仅用于让 catalog 真实存在、可被插件读取。
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.21"
+agconnect = "1.9.6.300"
+coreKtx = "1.15.0"
+
+[libraries]
+agconnect-core = { module = "com.huawei.agconnect:agconnect-core", version.ref = "agconnect" }
+agconnect-clouddb = { module = "com.huawei.agconnect:agconnect-cloud-database", version.ref = "agconnect" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+agconnect-agcp = { id = "com.huawei.agconnect.agcp", version.ref = "agconnect" }

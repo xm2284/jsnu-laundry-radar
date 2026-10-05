@@ -1,0 +1,25 @@
+{
+  "agcgw": {
+    "url": "connect-drcn.dbankcloud.cn",
+    "backurl": "connect-drcn.hispace.hicloud.com",
+    "websocketurl": "connect-ws-drcn.hispace.dbankcloud.cn",
+    "websocketbackurl": "connect-ws-drcn.hispace.dbankcloud.com"
+  },
+  "client": {
+    "cp_id": "YOUR_CP_ID",
+    "product_id": "YOUR_PRODUCT_ID",
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET",
+    "project_id": "YOUR_PROJECT_ID",
+    "app_id": "YOUR_APP_ID",
+    "api_key": "YOUR_API_KEY",
+    "package_name": "com.jsnu.laundry"
+  },
+  "service": {
+    "analytics": {
+      "collector_url": "datacollector-drcn.dt.hicloud.com",
+      "resource_id": "p1"
+    }
+  },
+  "region": "CN"
+}
