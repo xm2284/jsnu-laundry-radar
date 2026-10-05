@@ -41,7 +41,7 @@
   <g filter="url(#fg-rough2)">
     <rect x="174" y="116" width="142" height="82" rx="14" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="186" y="138" font-size="14" fill="#33302B">🧺 洗衣雷达</text>
+      <text x="186" y="138" font-size="14" fill="#33302B">洗衣雷达</text>
       <text x="186" y="170" font-size="34" font-weight="700" fill="#7BC47F">3</text>
       <text x="222" y="170" font-size="16" fill="#33302B">台空闲</text>
       <text x="186" y="190" font-size="13" fill="#33302B">最快 4 分钟后可用</text>
@@ -51,9 +51,9 @@
   <g filter="url(#fg-rough2)">
     <rect x="174" y="208" width="142" height="82" rx="14" fill="#E4F1DE" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="186" y="230" font-size="13" fill="#33302B">⏱ 洗衣中追踪</text>
+      <text x="186" y="230" font-size="13" fill="#33302B">洗衣中追踪</text>
       <text x="186" y="262" font-size="28" font-weight="700" fill="#E8745B">12:30</text>
-      <text x="186" y="280" font-size="12" fill="#33302B">20:45 洗完 · 点我定闹钟</text>
+      <text x="186" y="280" font-size="12" fill="#33302B">20:45 洗完 · 定闹钟</text>
     </g>
   </g>
   <!-- home dots -->

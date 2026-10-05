@@ -36,16 +36,16 @@
   </g>
   <g class="hw" filter="url(#fa-rough2)">
     <text x="86" y="176" font-size="21" font-weight="700" fill="#33302B">Android App</text>
-    <text x="86" y="206" font-size="16" fill="#33302B">Jetpack Compose · Material 3</text>
+    <text x="86" y="206" font-size="14" fill="#33302B">Jetpack Compose · M3</text>
     <text x="86" y="232" font-size="16" fill="#33302B">ViewModel + Repository</text>
     <text x="86" y="258" font-size="16" fill="#33302B">前台 WatchService 蹲守</text>
     <text x="86" y="284" font-size="16" fill="#33302B">桌面小组件 Widgets</text>
   </g>
   <!-- small phone doodle -->
   <g filter="url(#fa-rough2)" stroke="#33302B" stroke-width="2.4" fill="#fff">
-    <rect x="250" y="150" width="42" height="70" rx="8"/>
-    <line x1="262" y1="210" x2="280" y2="210" stroke="#33302B"/>
-    <rect x="256" y="160" width="30" height="34" rx="4" fill="#FBE3D8"/>
+    <rect x="256" y="244" width="40" height="58" rx="8"/>
+    <line x1="266" y1="296" x2="286" y2="296" stroke="#33302B"/>
+    <rect x="262" y="252" width="28" height="30" rx="4" fill="#FBE3D8"/>
   </g>
 
   <!-- arrows from client -->

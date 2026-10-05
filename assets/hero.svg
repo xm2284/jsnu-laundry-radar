@@ -27,8 +27,8 @@
       .hero-wave.w3 { animation-delay: 1.7s; }
       @keyframes hero-swing { 0%,100% { transform: rotate(-13deg); } 50% { transform: rotate(13deg); } }
       .hero-bell { transform-origin: 902px 92px; animation: hero-swing 1.7s ease-in-out infinite; }
-      @keyframes hero-pop { 0%,55% { transform: scale(.5); opacity:0; } 65% { transform: scale(1.06); opacity:1; } 80%,100% { transform: scale(1); opacity:1; } }
-      .hero-notif { transform-origin: 848px 205px; animation: hero-pop 3.4s ease-in-out infinite; }
+      @keyframes hero-pop { 0% { transform: scale(1); } 8% { transform: scale(1.06); } 16%,100% { transform: scale(1); } }
+      .hero-notif { transform-origin: 722px 79px; animation: hero-pop 3.4s ease-in-out infinite; }
       @keyframes hero-blink { 0%,100% { opacity:1; } 50% { opacity:.2; } }
       .hero-dot { animation: hero-blink 1.5s ease-in-out infinite; }
       @keyframes hero-rise { 0% { transform: translateY(0); opacity:0; } 30% { opacity:.8; } 100% { transform: translateY(-34px); opacity:0; } }
@@ -49,10 +49,10 @@
 
   <!-- doodles: stars / plus / sparks -->
   <g class="hero-tilt" stroke="#33302B" stroke-width="2.4" fill="none" stroke-linecap="round" filter="url(#hero-rough2)">
-    <path d="M74 92 l 0 18 M65 101 l 18 0"/>
-    <path d="M116 150 l 0 12 M110 156 l 12 0" stroke="#E8745B"/>
-    <path d="M356 70 l 8 16 16 3 -12 11 3 16 -15 -8 -15 8 3 -16 -12 -11 16 -3z" fill="#F2C14E" stroke="#33302B"/>
-    <path d="M666 352 l 0 14 M659 359 l 14 0" stroke="#6FBFB0"/>
+    <path d="M66 96 l 0 18 M57 105 l 18 0"/>
+    <path d="M110 150 l 0 12 M104 156 l 12 0" stroke="#E8745B"/>
+    <path d="M340 62 l 8 16 16 3 -12 11 3 16 -15 -8 -15 8 3 -16 -12 -11 16 -3z" fill="#F2C14E" stroke="#33302B"/>
+    <path d="M330 344 l 0 14 M323 351 l 14 0" stroke="#6FBFB0"/>
     <path d="M296 352 q 18 10 36 0" stroke="#7FB2E5"/>
     <path d="M40 300 q 16 -12 30 2" stroke="#8FBF6F"/>
   </g>
@@ -89,17 +89,17 @@
 
   <!-- title -->
   <g class="hw" filter="url(#hero-rough2)">
-    <text x="350" y="150" font-size="60" font-weight="700" fill="#33302B">JSNU 洗衣雷达</text>
-    <rect x="356" y="168" width="452" height="16" rx="8" fill="#F2C14E" opacity="0.55"/>
-    <path d="M356 226 q 120 10 240 0 t 210 2" fill="none" stroke="#E8745B" stroke-width="4" stroke-linecap="round"/>
-    <text x="354" y="222" font-size="26" fill="#2E2A26">宿舍洗衣机 · 空闲雷达 · 蹲守通知 · 洗完提醒</text>
+    <text x="350" y="152" font-size="54" font-weight="700" fill="#33302B">JSNU 洗衣雷达</text>
+    <rect x="356" y="168" width="366" height="15" rx="7" fill="#F2C14E" opacity="0.55"/>
+    <text x="356" y="216" font-size="22" fill="#2E2A26">宿舍洗衣机 · 空闲雷达 · 蹲守 · 洗完提醒</text>
+    <path d="M356 226 q 110 8 190 0 t 190 0" fill="none" stroke="#E8745B" stroke-width="4" stroke-linecap="round"/>
   </g>
 
   <!-- platform tag -->
   <g filter="url(#hero-rough2)">
-    <rect x="356" y="252" width="330" height="46" rx="23" fill="#6FBFB0" stroke="#33302B" stroke-width="3.2"/>
+    <rect x="354" y="246" width="384" height="46" rx="23" fill="#6FBFB0" stroke="#33302B" stroke-width="3.2"/>
     <g class="hw">
-      <text x="378" y="282" font-size="24" fill="#0F2B26">基于 海乐生活 (Haile Life) 平台</text>
+      <text x="376" y="276" font-size="20" fill="#0F2B26">基于 海乐生活 (Haile Life) 平台</text>
     </g>
   </g>
 
@@ -122,18 +122,19 @@
     <circle cx="802" cy="295" r="7" fill="#F2A65A"/>
     <circle cx="802" cy="331" r="7" fill="#E8745B"/>
     <text x="820" y="228" font-size="14" fill="#33302B">A3 空闲</text>
-    <text x="820" y="264" font-size="14" fill="#33302B">B1 运行·12m</text>
+    <text x="820" y="264" font-size="14" fill="#33302B">B1 运行 12m</text>
     <text x="820" y="300" font-size="14" fill="#33302B">C2 已约</text>
     <text x="820" y="336" font-size="14" fill="#33302B">D1 故障</text>
   </g>
 
-  <!-- notification bubble popping -->
+  <!-- notification toast (always visible) -->
   <g class="hero-notif" filter="url(#hero-rough2)">
-    <rect x="700" y="182" width="196" height="48" rx="12" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
-    <path d="M848 205 l 30 -8 0 34z" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
+    <rect x="560" y="52" width="300" height="54" rx="13" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="716" y="205" font-size="15" fill="#E8745B">🔔 3 楼有机器空出来啦！</text>
-      <text x="716" y="223" font-size="13" fill="#33302B">快去抢 ~</text>
+      <text x="580" y="86" font-size="19" fill="#E8745B">叮！3 楼有机器空出来啦</text>
+    </g>
+    <g stroke="#F2C14E" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M862 62 l 14 -10 M866 78 l 16 2 M860 92 l 12 12"/>
     </g>
   </g>
 
@@ -147,12 +148,12 @@
   <!-- bottom tech tags -->
   <g class="hw" filter="url(#hero-rough2)">
     <g stroke="#33302B" stroke-width="2.4">
-      <rect x="356" y="322" width="118" height="40" rx="12" fill="#FBE3D8"/>
-      <rect x="486" y="322" width="118" height="40" rx="12" fill="#DDEEF9"/>
-      <rect x="616" y="322" width="192" height="40" rx="12" fill="#E4F1DE"/>
+      <rect x="354" y="318" width="112" height="40" rx="12" fill="#FBE3D8"/>
+      <rect x="478" y="318" width="112" height="40" rx="12" fill="#DDEEF9"/>
+      <rect x="602" y="318" width="192" height="40" rx="12" fill="#E4F1DE"/>
     </g>
-    <text x="378" y="348" font-size="20" fill="#33302B">Android</text>
-    <text x="512" y="348" font-size="20" fill="#33302B">Kotlin</text>
-    <text x="640" y="348" font-size="20" fill="#33302B">Jetpack Compose</text>
+    <text x="376" y="344" font-size="19" fill="#33302B">Android</text>
+    <text x="500" y="344" font-size="19" fill="#33302B">Kotlin</text>
+    <text x="624" y="344" font-size="19" fill="#33302B">Jetpack Compose</text>
   </g>
 </svg>

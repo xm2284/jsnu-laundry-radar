@@ -70,11 +70,11 @@
   <g filter="url(#ft-rough2)">
     <rect x="286" y="234" width="234" height="70" rx="14" fill="#E4F1DE" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="306" y="266" font-size="18" fill="#33302B">🧺 洗完啦，记得拿 / 晾晒！</text>
-      <text x="306" y="290" font-size="14" fill="#33302B">高优先级提醒 · 自动结束追踪</text>
+      <text x="302" y="264" font-size="15" fill="#33302B">洗完啦，记得拿 / 晾晒！</text>
+      <text x="302" y="288" font-size="12" fill="#33302B">高优先级提醒 · 自动结束追踪</text>
     </g>
-    <circle cx="500" cy="252" r="12" fill="#E8745B" stroke="#33302B" stroke-width="2.6"/>
-    <text x="494" y="258" font-size="14" fill="#fff" class="hw">1</text>
+    <circle cx="506" cy="250" r="11" fill="#E8745B" stroke="#33302B" stroke-width="2.6"/>
+    <text x="501" y="255" font-size="13" fill="#fff" class="hw">1</text>
   </g>
 
   <g stroke="#F2C14E" stroke-width="3.4" stroke-linecap="round" fill="none" filter="url(#ft-rough2)">

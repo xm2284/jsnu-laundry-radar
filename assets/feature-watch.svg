@@ -16,8 +16,8 @@
     <style>
       @keyframes fw-swing { 0%,100% { transform: rotate(-16deg); } 50% { transform: rotate(16deg); } }
       .fw-bell { transform-origin: 168px 120px; animation: fw-swing 1.5s ease-in-out infinite; }
-      @keyframes fw-pop { 0%,50% { transform: scale(.6); opacity:0; } 62% { transform: scale(1.06); opacity:1; } 78%,100% { transform: scale(1); opacity:1; } }
-      .fw-notif { transform-origin: 300px 96px; animation: fw-pop 3.2s ease-in-out infinite; }
+      @keyframes fw-pop { 0% { transform: scale(1); } 8% { transform: scale(1.06); } 16%,100% { transform: scale(1); } }
+      .fw-notif { transform-origin: 380px 98px; animation: fw-pop 3.2s ease-in-out infinite; }
       @keyframes fw-sound { 0% { opacity:.9; transform: scale(.6); } 100% { opacity:0; transform: scale(1.5); } }
       .fw-sound { transform-origin: 168px 118px; animation: fw-sound 1.5s ease-out infinite; }
       @keyframes fw-hand { to { transform: rotate(360deg); } }
@@ -32,7 +32,7 @@
 
   <g class="hw" filter="url(#fw-rough2)">
     <text x="150" y="58" font-size="30" font-weight="700" fill="#33302B">② 蹲守通知</text>
-    <path d="M150 70 q 80 8 160 0" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M150 70 q 90 8 180 0" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linecap="round"/>
   </g>
 
   <!-- bell -->
@@ -50,7 +50,7 @@
     <rect x="228" y="72" width="304" height="52" rx="12" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
     <path d="M236 98 l -22 10 6 -22z" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="246" y="98" font-size="19" fill="#E8745B">🔔 4 楼 A3 空出来啦！</text>
+      <text x="246" y="98" font-size="19" fill="#E8745B">4 楼 A3 空出来啦！</text>
       <text x="246" y="116" font-size="15" fill="#33302B">边沿触发 · 30 分钟冷却，不打扰</text>
     </g>
   </g>
