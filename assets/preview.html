@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>JSNU 洗衣雷达 · 手绘 SVG 预览</title>
+<style>
+  :root { --ink:#33302B; --paper:#FBF6EC; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:32px 20px 80px; background:#FBF6EC; color:#33302B;
+         font-family:'Comic Sans MS','Segoe Print','KaiTi','STKaiti',cursive,system-ui,sans-serif; }
+  .wrap { max-width:1040px; margin:0 auto; }
+  h1 { font-size:34px; margin:0 0 6px; }
+  h1 .hl { background:linear-gradient(transparent 62%, #F2C14E 62%); }
+  p.sub { opacity:.75; margin:0 0 26px; }
+  h2 { font-size:22px; margin:38px 0 12px; border-bottom:3px dashed #33302B33; padding-bottom:6px;}
+  .card { background:#fff; border:2.4px solid var(--ink); border-radius:18px; padding:14px;
+          box-shadow:3px 4px 0 #33302B22; margin-bottom:22px; }
+  .card img { display:block; width:100%; height:auto; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .cap { font-size:14px; opacity:.7; margin:8px 2px 0; }
+  @media (max-width:760px){ .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🧺 JSNU 洗衣雷达 · <span class="hl">手绘风 SVG 预览</span></h1>
+  <p class="sub">海乐生活版 · 全部为纯 SVG（矢量 / 可动 / 体积小），可直接放进 README。</p>
+
+  <h2>主横幅（带动画）</h2>
+  <div class="card"><img src="hero.svg" alt="hero"></div>
+  <div class="cap">动画：滚筒旋转 · 雷达波扩散 · 铃铛摆动 · 通知弹出 · 气泡上升</div>
+
+  <h2>功能插画（4 张）</h2>
+  <div class="grid">
+    <div><div class="card"><img src="feature-radar.svg" alt="radar"></div><div class="cap">① 实时设备状态雷达</div></div>
+    <div><div class="card"><img src="feature-watch.svg" alt="watch"></div><div class="cap">② 蹲守通知</div></div>
+    <div><div class="card"><img src="feature-track.svg" alt="track"></div><div class="cap">③ 洗衣中追踪</div></div>
+    <div><div class="card"><img src="feature-widget.svg" alt="widget"></div><div class="cap">④ 桌面小组件</div></div>
+  </div>
+
+  <h2>系统架构（手绘版）</h2>
+  <div class="card"><img src="architecture.svg" alt="architecture"></div>
+  <div class="cap">数据流虚线为动画</div>
+
+  <h2>分隔线</h2>
+  <div class="card"><img src="divider.svg" alt="divider"></div>
+</div>
+</body>
+</html>

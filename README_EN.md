@@ -2,6 +2,17 @@
 
 [中文文档 (Chinese)](README.md) | English Documentation
 
+<p align="center"><img src="assets/hero.svg" alt="JSNU Laundry Radar" width="100%" /></p>
+
+<p align="center">
+  <img src="assets/feature-radar.svg" width="49%" alt="Live device radar" />
+  <img src="assets/feature-watch.svg" width="49%" alt="Watch notifications" />
+</p>
+<p align="center">
+  <img src="assets/feature-track.svg" width="49%" alt="Wash tracking" />
+  <img src="assets/feature-widget.svg" width="49%" alt="Home-screen widgets" />
+</p>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />

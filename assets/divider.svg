@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 70" width="1200" height="70" role="img" aria-label="手绘分隔线">
+  <title>手绘分隔线</title>
+  <defs>
+    <filter id="dv-rough" x="-4%" y="-40%" width="108%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="2" seed="77" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <style>
+      @keyframes dv-spin { to { transform: rotate(360deg); } }
+      .dv-spin { transform-origin: 600px 35px; animation: dv-spin 6s linear infinite; }
+      @keyframes dv-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+      .dv-bob { animation: dv-bob 2.6s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <path d="M30 35 q 40 -18 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0"
+        fill="none" stroke="#33302B" stroke-width="2.6" stroke-linecap="round" opacity=".55" filter="url(#dv-rough)"/>
+
+  <g class="dv-bob" stroke="#33302B" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M180 24 q -8 10 0 20 M188 22 q 8 12 0 22"/>
+    <path d="M1012 24 q -8 10 0 20 M1020 22 q 8 12 0 22"/>
+  </g>
+
+  <g filter="url(#dv-rough)" transform="translate(0,3)">
+    <g transform="translate(600,35)">
+      <g class="dv-spin">
+        <circle r="15" fill="#BFE3DC" stroke="#33302B" stroke-width="2.6"/>
+        <path d="M-8 -2 q 6 -5 14 3 t -2 8" fill="none" stroke="#7FB2E5" stroke-width="2.6" stroke-linecap="round"/>
+        <circle r="3" fill="#F2C14E" stroke="#33302B" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+
+  <g stroke="#33302B" stroke-width="2.2" fill="none" stroke-linecap="round" filter="url(#dv-rough)">
+    <path d="M420 30 l 6 12 12 2 -9 9 2 12 -11 -6 -11 6 2 -12 -9 -9 12 -2z" fill="#F2C14E"/>
+    <circle cx="760" cy="32" r="7" fill="#E8745B"/>
+    <path d="M786 26 a 7 7 0 0 1 7 7 l 2 6 3 3 -24 0 3 -3 2 -6 a 7 7 0 0 1 7 -7z" fill="#F2C14E"/>
+    <path d="M60 34 q 12 -10 24 0" stroke="#6FBFB0"/>
+    <path d="M1130 34 q 12 -10 24 0" stroke="#6FBFB0"/>
+  </g>
+</svg>

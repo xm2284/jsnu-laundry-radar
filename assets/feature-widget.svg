@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340" role="img" aria-label="桌面小组件">
+  <title>桌面小组件 · 一眼看空闲</title>
+  <defs>
+    <filter id="fg-rough" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016 0.022" numOctaves="2" seed="51" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="fg-rough2" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="15" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="fg-paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.07 0"/>
+    </filter>
+    <style>
+      @keyframes fg-blink { 0%,100% { opacity:1; } 50% { opacity:.25; } }
+      .fg-live { animation: fg-blink 1.4s ease-in-out infinite; }
+      @keyframes fg-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+      .fg-float { animation: fg-float 3.4s ease-in-out infinite; }
+      .hw { font-family: 'Comic Sans MS','Segoe Print','Bradley Hand','KaiTi','STKaiti',cursive; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="552" height="332" rx="22" fill="#FFFDF6" stroke="#33302B" stroke-width="3.4" filter="url(#fg-rough)"/>
+  <rect x="4" y="4" width="552" height="332" rx="22" fill="#fff" filter="url(#fg-paper)"/>
+  <rect x="440" y="12" width="86" height="26" rx="3" fill="#E4F1DE" stroke="#33302B" stroke-width="2" transform="rotate(5 483 25)" filter="url(#fg-rough2)" opacity=".9"/>
+
+  <g class="hw" filter="url(#fg-rough2)">
+    <text x="150" y="58" font-size="30" font-weight="700" fill="#33302B">④ 桌面小组件</text>
+    <path d="M150 70 q 80 8 160 0" fill="none" stroke="#8FBF6F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- phone -->
+  <g filter="url(#fg-rough)" class="fg-float">
+    <rect x="150" y="86" width="190" height="234" rx="24" fill="#FFFDF6" stroke="#33302B" stroke-width="4"/>
+    <rect x="162" y="100" width="166" height="206" rx="16" fill="#EAF4F1" stroke="#33302B" stroke-width="2.6"/>
+    <rect x="214" y="92" width="62" height="8" rx="4" fill="#33302B" opacity=".7"/>
+  </g>
+  <!-- widget: availability -->
+  <g filter="url(#fg-rough2)">
+    <rect x="174" y="116" width="142" height="82" rx="14" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
+    <g class="hw">
+      <text x="186" y="138" font-size="14" fill="#33302B">🧺 洗衣雷达</text>
+      <text x="186" y="170" font-size="34" font-weight="700" fill="#7BC47F">3</text>
+      <text x="222" y="170" font-size="16" fill="#33302B">台空闲</text>
+      <text x="186" y="190" font-size="13" fill="#33302B">最快 4 分钟后可用</text>
+    </g>
+  </g>
+  <!-- widget: tracking -->
+  <g filter="url(#fg-rough2)">
+    <rect x="174" y="208" width="142" height="82" rx="14" fill="#E4F1DE" stroke="#33302B" stroke-width="3"/>
+    <g class="hw">
+      <text x="186" y="230" font-size="13" fill="#33302B">⏱ 洗衣中追踪</text>
+      <text x="186" y="262" font-size="28" font-weight="700" fill="#E8745B">12:30</text>
+      <text x="186" y="280" font-size="12" fill="#33302B">20:45 洗完 · 点我定闹钟</text>
+    </g>
+  </g>
+  <!-- home dots -->
+  <g fill="#33302B" opacity=".65">
+    <circle cx="216" cy="298" r="4"/>
+    <circle cx="240" cy="298" r="4" fill="#E8745B"/>
+    <circle cx="264" cy="298" r="4"/>
+  </g>
+
+  <!-- hint -->
+  <g class="hw" filter="url(#fg-rough2)">
+    <path d="M362 200 q 40 -14 74 -6" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M430 190 l 6 6 -8 4" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linecap="round"/>
+    <text x="366" y="150" font-size="17" fill="#33302B">不用开 App</text>
+    <text x="366" y="172" font-size="17" fill="#33302B">锁屏就能看</text>
+  </g>
+  <g fill="#F2C14E" filter="url(#fg-rough2)">
+    <path d="M486 150 l 6 12 12 2 -9 9 2 12 -11 -6 -11 6 2 -12 -9 -9 12 -2z" stroke="#33302B" stroke-width="2"/>
+  </g>
+</svg>

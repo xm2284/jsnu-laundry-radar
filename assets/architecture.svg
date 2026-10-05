@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-label="手绘风格系统架构图">
+  <title>系统架构</title>
+  <defs>
+    <filter id="fa-rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves="2" seed="61" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="fa-rough2" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="18" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="fa-paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="6" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.07 0"/>
+    </filter>
+    <style>
+      @keyframes fa-dash { to { stroke-dashoffset: -60; } }
+      .fa-flow { stroke-dasharray: 10 10; animation: fa-dash 1.6s linear infinite; }
+      @keyframes fa-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      .fa-bob { animation: fa-bob 3s ease-in-out infinite; }
+      .hw { font-family: 'Comic Sans MS','Segoe Print','Bradley Hand','KaiTi','STKaiti',cursive; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="952" height="422" rx="24" fill="#FFFDF6" stroke="#33302B" stroke-width="3.4" filter="url(#fa-rough)"/>
+  <rect x="4" y="4" width="952" height="422" rx="24" fill="#fff" filter="url(#fa-paper)"/>
+
+  <g class="hw" filter="url(#fa-rough2)">
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#33302B">系统架构 (手绘版)</text>
+    <path d="M40 68 q 110 8 220 0" fill="none" stroke="#6FBFB0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- client box -->
+  <g class="fa-bob" filter="url(#fa-rough)">
+    <rect x="60" y="130" width="250" height="180" rx="18" fill="#DDEEF9" stroke="#33302B" stroke-width="3.6"/>
+  </g>
+  <g class="hw" filter="url(#fa-rough2)">
+    <text x="86" y="176" font-size="21" font-weight="700" fill="#33302B">Android App</text>
+    <text x="86" y="206" font-size="16" fill="#33302B">Jetpack Compose · Material 3</text>
+    <text x="86" y="232" font-size="16" fill="#33302B">ViewModel + Repository</text>
+    <text x="86" y="258" font-size="16" fill="#33302B">前台 WatchService 蹲守</text>
+    <text x="86" y="284" font-size="16" fill="#33302B">桌面小组件 Widgets</text>
+  </g>
+  <!-- small phone doodle -->
+  <g filter="url(#fa-rough2)" stroke="#33302B" stroke-width="2.4" fill="#fff">
+    <rect x="250" y="150" width="42" height="70" rx="8"/>
+    <line x1="262" y1="210" x2="280" y2="210" stroke="#33302B"/>
+    <rect x="256" y="160" width="30" height="34" rx="4" fill="#FBE3D8"/>
+  </g>
+
+  <!-- arrows from client -->
+  <g stroke="#7FB2E5" stroke-width="3.4" fill="none" stroke-linecap="round" filter="url(#fa-rough2)">
+    <path class="fa-flow" d="M312 190 q 90 -30 168 -20"/>
+    <path class="fa-flow" d="M312 254 q 90 34 168 26"/>
+  </g>
+  <g class="hw" filter="url(#fa-rough2)">
+    <text x="330" y="166" font-size="14" fill="#33302B">HTTPS 只读</text>
+    <text x="330" y="300" font-size="14" fill="#33302B">匿名登录</text>
+  </g>
+
+  <!-- Haier box -->
+  <g class="fa-bob" filter="url(#fa-rough)">
+    <rect x="500" y="96" width="250" height="110" rx="18" fill="#BFE3DC" stroke="#33302B" stroke-width="3.6"/>
+  </g>
+  <g class="hw" filter="url(#fa-rough2)">
+    <text x="524" y="138" font-size="20" font-weight="700" fill="#33302B">海乐生活 状态接口</text>
+    <text x="524" y="166" font-size="15" fill="#33302B">yshz-user.haier-ioc.com</text>
+    <text x="524" y="190" font-size="15" fill="#33302B">公开 · 免鉴权 · 只读</text>
+  </g>
+
+  <!-- AGC box -->
+  <g class="fa-bob" filter="url(#fa-rough)">
+    <rect x="500" y="248" width="250" height="110" rx="18" fill="#FBE3D8" stroke="#33302B" stroke-width="3.6"/>
+  </g>
+  <g class="hw" filter="url(#fa-rough2)">
+    <text x="524" y="290" font-size="20" font-weight="700" fill="#33302B">华为 AGC (可选)</text>
+    <text x="524" y="318" font-size="15" fill="#33302B">匿名认证 + CloudDB</text>
+    <text x="524" y="342" font-size="15" fill="#33302B">失败自动降级</text>
+  </g>
+
+  <!-- cloud doodles -->
+  <g filter="url(#fa-rough2)" fill="#fff" stroke="#33302B" stroke-width="2.8">
+    <path d="M800 150 a 18 18 0 0 1 34 -6 a 20 20 0 0 1 34 8 a 16 16 0 0 1 -6 30 l -54 0 a 16 16 0 0 1 -8 -32z"/>
+  </g>
+
+  <!-- note -->
+  <g class="hw" filter="url(#fa-rough2)">
+    <rect x="500" y="380" width="360" height="34" rx="12" fill="#FFF7E6" stroke="#33302B" stroke-width="2.6"/>
+    <text x="516" y="404" font-size="15" fill="#33302B">AGC / 友盟 未配置也不影响核心洗衣功能</text>
+  </g>
+  <g stroke="#F2C14E" stroke-width="3.2" fill="none" stroke-linecap="round" filter="url(#fa-rough2)">
+    <path d="M96 350 q 40 22 84 8"/>
+    <path d="M180 358 l -4 -10 12 2" />
+  </g>
+</svg>

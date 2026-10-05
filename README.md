@@ -1,6 +1,10 @@
 # 🧺 JSNU 洗衣雷达 · 海乐生活版 (Haile Life Laundry Radar)
 
 <p align="center">
+  <img src="assets/hero.svg" alt="JSNU 洗衣雷达 · 海乐生活版" width="100%" />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/UI-Jetpack%20Compose%20Material%203-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" alt="Compose" />
@@ -18,6 +22,8 @@
 <p align="center">
   <a href="README.md">简体中文</a> • <a href="README_EN.md">English Documentation</a>
 </p>
+
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
 ---
 
@@ -38,6 +44,15 @@
 ---
 
 ## ✨ 核心功能
+
+<p align="center">
+  <img src="assets/feature-radar.svg" width="49%" alt="实时设备状态雷达" />
+  <img src="assets/feature-watch.svg" width="49%" alt="蹲守通知" />
+</p>
+<p align="center">
+  <img src="assets/feature-track.svg" width="49%" alt="洗衣中追踪" />
+  <img src="assets/feature-widget.svg" width="49%" alt="桌面小组件" />
+</p>
 
 ### 1. 实时设备状态雷达
 - 直连「海乐生活」校园洗衣平台**公开只读状态接口**，拉取点位内全部设备；
@@ -78,6 +93,13 @@
 
 ## 🏗️ 技术架构
 
+<p align="center">
+  <img src="assets/architecture.svg" alt="系统架构（手绘版）" width="100%" />
+</p>
+
+<details>
+<summary>查看文字版架构图</summary>
+
 ```text
 ┌──────────────────────────────────────────────────────────────┐
 │                     Android App (Jetpack Compose)             │
@@ -102,6 +124,8 @@
 │ yshz-user.haier-ioc   │              │ 匿名用户档案 (可选自降级)  │
 └──────────────────────┘              └──────────────────────────┘
 ```
+
+</details>
 
 ### 技术栈
 
@@ -196,6 +220,7 @@ jsnu-laundry-radar/
 │   ├── src/test/                        # 单元测试 + Roborazzi 截图测试
 │   ├── agconnect-services.json.example  # AGC 配置脱敏模板
 │   └── build.gradle.kts
+├── assets/                              # 手绘风 SVG 插画与横幅
 ├── .github/workflows/gitee-mirror.yml   # 推送后自动镜像到 Gitee
 ├── .gitignore                           # 忽略凭据 / 构建产物 / 签名文件
 ├── local.properties.example             # 本地私密配置模板

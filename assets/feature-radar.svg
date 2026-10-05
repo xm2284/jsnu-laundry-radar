@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340" role="img" aria-label="实时设备状态雷达">
+  <title>实时设备状态雷达</title>
+  <defs>
+    <filter id="fr-rough" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016 0.022" numOctaves="2" seed="21" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="fr-rough2" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="6" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="fr-paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.07 0"/>
+    </filter>
+    <style>
+      @keyframes fr-sweep { to { transform: rotate(360deg); } }
+      .fr-sweep { transform-origin: 150px 178px; animation: fr-sweep 4s linear infinite; }
+      @keyframes fr-ring { 0% { opacity:.9; transform: scale(.4); } 100% { opacity:0; transform: scale(1.3); } }
+      .fr-ring { transform-origin: 150px 178px; animation: fr-ring 3s ease-out infinite; }
+      .fr-ring.r2 { animation-delay: 1s; } .fr-ring.r3 { animation-delay: 2s; }
+      .hw { font-family: 'Comic Sans MS','Segoe Print','Bradley Hand','KaiTi','STKaiti',cursive; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="552" height="332" rx="22" fill="#FFFDF6" stroke="#33302B" stroke-width="3.4" filter="url(#fr-rough)"/>
+  <rect x="4" y="4" width="552" height="332" rx="22" fill="#fff" filter="url(#fr-paper)"/>
+  <!-- washi tape -->
+  <rect x="34" y="12" width="86" height="26" rx="3" fill="#BFE3DC" stroke="#33302B" stroke-width="2" transform="rotate(-6 77 25)" filter="url(#fr-rough2)" opacity=".9"/>
+
+  <g class="hw" filter="url(#fr-rough2)">
+    <text x="150" y="58" font-size="30" font-weight="700" fill="#33302B">① 实时设备雷达</text>
+    <path d="M150 70 q 90 8 180 0" fill="none" stroke="#6FBFB0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- radar -->
+  <g filter="url(#fr-rough2)" fill="none" stroke="#33302B" stroke-width="3">
+    <circle cx="150" cy="178" r="78" fill="#EAF4F1"/>
+    <circle cx="150" cy="178" r="52" stroke="#9CCFC5"/>
+    <circle cx="150" cy="178" r="26" stroke="#9CCFC5"/>
+    <path d="M150 100 l 0 156 M72 178 l 156 0" stroke="#9CCFC5" stroke-width="2"/>
+  </g>
+  <g fill="none" stroke="#E8745B" stroke-width="3">
+    <circle class="fr-ring" cx="150" cy="178" r="78"/>
+    <circle class="fr-ring r2" cx="150" cy="178" r="78"/>
+    <circle class="fr-ring r3" cx="150" cy="178" r="78"/>
+  </g>
+  <g class="fr-sweep" filter="url(#fr-rough2)">
+    <path d="M150 178 L 150 100 A 78 78 0 0 1 205 122 Z" fill="#E8745B" opacity="0.28"/>
+    <line x1="150" y1="178" x2="150" y2="100" stroke="#E8745B" stroke-width="3.4" stroke-linecap="round"/>
+  </g>
+  <circle cx="150" cy="178" r="7" fill="#33302B"/>
+  <circle cx="176" cy="150" r="5" fill="#7BC47F"/>
+  <circle cx="126" cy="210" r="5" fill="#6FA8DC"/>
+  <circle cx="184" cy="206" r="5" fill="#E8745B"/>
+
+  <!-- machine list -->
+  <g class="hw" filter="url(#fr-rough2)">
+    <g stroke="#33302B" stroke-width="2.4" fill="#ffffff">
+      <rect x="300" y="106" width="212" height="46" rx="10"/>
+      <rect x="300" y="162" width="212" height="46" rx="10"/>
+      <rect x="300" y="218" width="212" height="46" rx="10"/>
+    </g>
+    <circle cx="324" cy="129" r="9" fill="#7BC47F"/>
+    <circle cx="324" cy="185" r="9" fill="#6FA8DC"/>
+    <circle cx="324" cy="241" r="9" fill="#E8745B"/>
+    <text x="344" y="135" font-size="20" fill="#33302B">空闲 · 立刻可用</text>
+    <text x="344" y="191" font-size="20" fill="#33302B">运行中 · 剩 12 分</text>
+    <text x="344" y="247" font-size="20" fill="#33302B">故障 · 请勿使用</text>
+  </g>
+
+  <!-- small doodle: "soonest first" -->
+  <g class="hw" filter="url(#fr-rough2)">
+    <path d="M300 292 q 60 -18 120 0" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linecap="round"/>
+    <text x="300" y="316" font-size="17" fill="#33302B">自动按「最快可用」排序 ↑</text>
+  </g>
+  <g stroke="#F2C14E" stroke-width="3.4" stroke-linecap="round" filter="url(#fr-rough2)">
+    <path d="M150 262 l 0 -14 M138 254 l 12 -12 12 12" fill="none"/>
+  </g>
+</svg>

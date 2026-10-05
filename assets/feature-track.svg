@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340" role="img" aria-label="洗衣中追踪与取衣提醒">
+  <title>洗衣中追踪 · 倒计时与洗完提醒</title>
+  <defs>
+    <filter id="ft-rough" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016 0.022" numOctaves="2" seed="41" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="ft-rough2" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="12" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="ft-paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.07 0"/>
+    </filter>
+    <style>
+      @keyframes ft-spin { to { transform: rotate(360deg); } }
+      .ft-drum { transform-origin: 170px 190px; animation: ft-spin 5s linear infinite; }
+      @keyframes ft-dash { to { stroke-dashoffset: -220; } }
+      .ft-ring { animation: ft-dash 6s linear infinite; }
+      @keyframes ft-bub { 0% { transform: translateY(0); opacity:0; } 30% { opacity:.85; } 100% { transform: translateY(-30px); opacity:0; } }
+      .ft-bub { animation: ft-bub 3.4s ease-in infinite; }
+      .ft-bub.b2 { animation-delay: 1.1s; } .ft-bub.b3 { animation-delay: 2.2s; }
+      @keyframes ft-blink { 0%,100% { opacity:1; } 50% { opacity:.25; } }
+      .ft-live { animation: ft-blink 1.3s ease-in-out infinite; }
+      .hw { font-family: 'Comic Sans MS','Segoe Print','Bradley Hand','KaiTi','STKaiti',cursive; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="552" height="332" rx="22" fill="#FFFDF6" stroke="#33302B" stroke-width="3.4" filter="url(#ft-rough)"/>
+  <rect x="4" y="4" width="552" height="332" rx="22" fill="#fff" filter="url(#ft-paper)"/>
+  <rect x="40" y="12" width="86" height="26" rx="3" fill="#DDEEF9" stroke="#33302B" stroke-width="2" transform="rotate(-5 83 25)" filter="url(#ft-rough2)" opacity=".9"/>
+
+  <g class="hw" filter="url(#ft-rough2)">
+    <text x="150" y="58" font-size="30" font-weight="700" fill="#33302B">③ 洗衣中追踪</text>
+    <path d="M150 70 q 80 8 160 0" fill="none" stroke="#7FB2E5" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- machine -->
+  <g filter="url(#ft-rough)">
+    <rect x="96" y="106" width="150" height="192" rx="16" fill="#BFE3DC" stroke="#33302B" stroke-width="4"/>
+    <rect x="112" y="122" width="118" height="32" rx="8" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
+    <circle cx="132" cy="138" r="9" fill="#F2C14E" stroke="#33302B" stroke-width="2.6"/>
+    <rect x="196" y="130" width="26" height="16" rx="4" fill="#E8745B" stroke="#33302B" stroke-width="2.6"/>
+  </g>
+  <circle cx="171" cy="216" r="60" fill="#DFF1FB" stroke="#33302B" stroke-width="4" filter="url(#ft-rough)"/>
+  <circle cx="171" cy="216" r="62" fill="none" stroke="#E4E9EC" stroke-width="6"/>
+  <circle class="ft-ring" cx="171" cy="216" r="62" fill="none" stroke="#7FB2E5" stroke-width="6"
+          stroke-linecap="round" stroke-dasharray="120 270" transform="rotate(-90 171 216)"/>
+  <g class="ft-drum" filter="url(#ft-rough2)">
+    <path d="M171 172 q 14 12 28 26" fill="none" stroke="#7FB2E5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M132 224 q 20 -10 40 6 t 38 -2" fill="none" stroke="#7FB2E5" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#7FB2E5" stroke-width="3" stroke-linecap="round">
+    <circle class="ft-bub" cx="126" cy="96" r="7"/>
+    <circle class="ft-bub b2" cx="148" cy="88" r="5"/>
+    <circle class="ft-bub b3" cx="112" cy="82" r="4"/>
+  </g>
+
+  <!-- countdown panel -->
+  <g class="hw" filter="url(#ft-rough2)">
+    <rect x="286" y="106" width="234" height="112" rx="14" fill="#FFF7E6" stroke="#33302B" stroke-width="3.2"/>
+    <circle cx="316" cy="134" r="7" fill="#7BC47F" class="ft-live"/>
+    <text x="332" y="140" font-size="17" fill="#33302B">洗衣中 · 实时刷新</text>
+    <text x="306" y="188" font-size="42" font-weight="700" fill="#E8745B">12:30</text>
+    <text x="306" y="208" font-size="15" fill="#33302B">预计 20:45 洗完 · 每分钟更新</text>
+  </g>
+
+  <!-- finish alert -->
+  <g filter="url(#ft-rough2)">
+    <rect x="286" y="234" width="234" height="70" rx="14" fill="#E4F1DE" stroke="#33302B" stroke-width="3"/>
+    <g class="hw">
+      <text x="306" y="266" font-size="18" fill="#33302B">🧺 洗完啦，记得拿 / 晾晒！</text>
+      <text x="306" y="290" font-size="14" fill="#33302B">高优先级提醒 · 自动结束追踪</text>
+    </g>
+    <circle cx="500" cy="252" r="12" fill="#E8745B" stroke="#33302B" stroke-width="2.6"/>
+    <text x="494" y="258" font-size="14" fill="#fff" class="hw">1</text>
+  </g>
+
+  <g stroke="#F2C14E" stroke-width="3.4" stroke-linecap="round" fill="none" filter="url(#ft-rough2)">
+    <path d="M266 170 q 10 -10 0 -20" />
+    <path d="M40 300 q 18 10 36 0"/>
+  </g>
+</svg>
