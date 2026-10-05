@@ -43,13 +43,13 @@
     <circle cx="132" cy="138" r="9" fill="#F2C14E" stroke="#33302B" stroke-width="2.6"/>
     <rect x="196" y="130" width="26" height="16" rx="4" fill="#E8745B" stroke="#33302B" stroke-width="2.6"/>
   </g>
-  <circle cx="171" cy="216" r="60" fill="#DFF1FB" stroke="#33302B" stroke-width="4" filter="url(#ft-rough)"/>
-  <circle cx="171" cy="216" r="62" fill="none" stroke="#E4E9EC" stroke-width="6"/>
-  <circle class="ft-ring" cx="171" cy="216" r="62" fill="none" stroke="#7FB2E5" stroke-width="6"
-          stroke-linecap="round" stroke-dasharray="120 270" transform="rotate(-90 171 216)"/>
+  <circle cx="171" cy="216" r="58" fill="#DFF1FB" stroke="#33302B" stroke-width="4" filter="url(#ft-rough)"/>
+  <circle cx="171" cy="216" r="54" fill="none" stroke="#E4E9EC" stroke-width="5"/>
+  <circle class="ft-ring" cx="171" cy="216" r="54" fill="none" stroke="#7FB2E5" stroke-width="5"
+          stroke-linecap="round" stroke-dasharray="110 230" transform="rotate(-90 171 216)"/>
   <g class="ft-drum" filter="url(#ft-rough2)">
-    <path d="M171 172 q 14 12 28 26" fill="none" stroke="#7FB2E5" stroke-width="5" stroke-linecap="round"/>
-    <path d="M132 224 q 20 -10 40 6 t 38 -2" fill="none" stroke="#7FB2E5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M158 188 q 12 10 26 20" fill="none" stroke="#7FB2E5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M140 222 q 18 -8 36 4 t 28 -4" fill="none" stroke="#7FB2E5" stroke-width="5" stroke-linecap="round"/>
   </g>
   <g fill="none" stroke="#7FB2E5" stroke-width="3" stroke-linecap="round">
     <circle class="ft-bub" cx="126" cy="96" r="7"/>

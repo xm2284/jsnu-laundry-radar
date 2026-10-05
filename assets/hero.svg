@@ -28,7 +28,7 @@
       @keyframes hero-swing { 0%,100% { transform: rotate(-13deg); } 50% { transform: rotate(13deg); } }
       .hero-bell { transform-origin: 902px 92px; animation: hero-swing 1.7s ease-in-out infinite; }
       @keyframes hero-pop { 0% { transform: scale(1); } 8% { transform: scale(1.06); } 16%,100% { transform: scale(1); } }
-      .hero-notif { transform-origin: 722px 79px; animation: hero-pop 3.4s ease-in-out infinite; }
+      .hero-notif { transform-origin: 710px 57px; animation: hero-pop 3.4s ease-in-out infinite; }
       @keyframes hero-blink { 0%,100% { opacity:1; } 50% { opacity:.2; } }
       .hero-dot { animation: hero-blink 1.5s ease-in-out infinite; }
       @keyframes hero-rise { 0% { transform: translateY(0); opacity:0; } 30% { opacity:.8; } 100% { transform: translateY(-34px); opacity:0; } }
@@ -129,12 +129,12 @@
 
   <!-- notification toast (always visible) -->
   <g class="hero-notif" filter="url(#hero-rough2)">
-    <rect x="560" y="52" width="300" height="54" rx="13" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
+    <rect x="560" y="30" width="300" height="54" rx="13" fill="#FFF7E6" stroke="#33302B" stroke-width="3"/>
     <g class="hw">
-      <text x="580" y="86" font-size="19" fill="#E8745B">叮！3 楼有机器空出来啦</text>
+      <text x="580" y="64" font-size="19" fill="#E8745B">叮！3 楼有机器空出来啦</text>
     </g>
     <g stroke="#F2C14E" stroke-width="3" stroke-linecap="round" fill="none">
-      <path d="M862 62 l 14 -10 M866 78 l 16 2 M860 92 l 12 12"/>
+      <path d="M862 40 l 14 -10 M866 56 l 16 2 M860 70 l 12 12"/>
     </g>
   </g>
 
@@ -148,12 +148,12 @@
   <!-- bottom tech tags -->
   <g class="hw" filter="url(#hero-rough2)">
     <g stroke="#33302B" stroke-width="2.4">
-      <rect x="354" y="318" width="112" height="40" rx="12" fill="#FBE3D8"/>
-      <rect x="478" y="318" width="112" height="40" rx="12" fill="#DDEEF9"/>
-      <rect x="602" y="318" width="192" height="40" rx="12" fill="#E4F1DE"/>
+      <rect x="354" y="318" width="102" height="40" rx="12" fill="#FBE3D8"/>
+      <rect x="466" y="318" width="90" height="40" rx="12" fill="#DDEEF9"/>
+      <rect x="566" y="318" width="158" height="40" rx="12" fill="#E4F1DE"/>
     </g>
-    <text x="376" y="344" font-size="19" fill="#33302B">Android</text>
-    <text x="500" y="344" font-size="19" fill="#33302B">Kotlin</text>
-    <text x="624" y="344" font-size="19" fill="#33302B">Jetpack Compose</text>
+    <text x="372" y="344" font-size="16" fill="#33302B">Android</text>
+    <text x="482" y="344" font-size="16" fill="#33302B">Kotlin</text>
+    <text x="582" y="344" font-size="16" fill="#33302B">Jetpack Compose</text>
   </g>
 </svg>
